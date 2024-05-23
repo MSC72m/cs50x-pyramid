@@ -9,12 +9,12 @@ This project is a solution to a CS50x problem set that involves creating a pyram
 - [Code Explanation](#code-explanation)
 
 ## Installation
-No special installation is required for this project. Ensure you have a C compiler like `gcc` installed.
+No special installation is required for this project.
 
 ## Usage
 To compile and run the project, use the following commands:
 
-
+## code-explnation
 make pyramid
 ./pyramid
 You will be prompted to enter the height of the pyramid, which should be a number between 1 and 8.
@@ -29,23 +29,24 @@ Main Function
 int main(void)
 {
     int height;
+``` 
 The #include <cs50.h> and #include <stdio.h> directives include the CS50 library and the standard input/output library, respectively.
 int main(void) is the entry point of the program where the execution starts.
 int height; declares a variable height to store the height of the pyramid provided by the user.
 Input Validation
-c
-Copy code
+``` 
     do
     {
         height = get_int("Enter the height of Pyramid (between 1 && 8): ");
     }
     while (height < 1 || height > 8);
+``` 
 The do...while loop repeatedly prompts the user to enter a valid height between 1 and 8.
 get_int is a function from the CS50 library that prompts the user for an integer input.
 The loop continues until the user enters a valid number within the specified range.
 Constructing the Pyramid
-c
 
+``` 
     for (int rows = 0; rows < height; rows++)
     {
         // print spaces
