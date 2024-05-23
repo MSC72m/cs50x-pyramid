@@ -14,7 +14,7 @@ No special installation is required for this project.
 ## Usage
 To compile and run the project, use the following commands:
 
-## #code-explanation
+## code-explanation
 make pyramid
 ./pyramid
 You will be prompted to enter the height of the pyramid, which should be a number between 1 and 8.
